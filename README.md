@@ -16,3 +16,14 @@ A worse version of the [Pocket-SDVX-Pico-v4](https://github.com/speedypotato/Poc
 * x1 [1U Keycap](https://www.printables.com/model/440477-keycaps-for-pico-sdvx-controller)
 * x4 [1.5U Keycaps](https://www.printables.com/model/440477-keycaps-for-pico-sdvx-controller)
 * x2 [2U Keycaps](https://www.printables.com/model/440477-keycaps-for-pico-sdvx-controller)
+
+## Pico GPIO:
+* `GP0`: BT-A
+* `GP1`: BT-B
+* `GP2`: BT-C
+* `GP3`: BT-D
+* `GP4`: FX-L
+* `GP5`: FX-R
+* `GP6`: START
+* `GP16` & `GP17`: VOL-L
+* `GP18` & `GP19`: VOL-R

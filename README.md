@@ -1,5 +1,5 @@
 # Janky SDVX Controller
-A worse version of the [Pocket-SDVX](https://github.com/speedypotato/Pocket-SDVX)
+A worse version of the [Pocket-SDVX-Pico-v4](https://github.com/speedypotato/Pocket-SDVX-Pico-v4) with no RGB
 
 ## Parts:
 * x2 Encoders ([PEC16-2015F-N0024](https://mou.sr/3JNRuk8))

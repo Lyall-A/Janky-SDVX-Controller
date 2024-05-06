@@ -10,9 +10,9 @@ A worse version of the [Pocket-SDVX-Pico-v4](https://github.com/speedypotato/Poc
 * x2 [2U Keycaps](https://www.aliexpress.com/item/1005004784994416.html)
 
 ## 3D Printed Parts:
-* x1 [Case](./Models) (TODO)
-* x1 [Case Top](./Models) (TODO)
-* x2 [Knobs](./Models) (TODO)
+* x1 [Case](./Models/Case.stl)
+* x1 [Case Top](./Models/Case%20Top.stl)
+* x2 [Knobs (22mm)](./Models/Knob%20(22mm).stl) or [Knobs (25mm)](./Models/Knob%20(25mm).stl)
 * x1 [1U Keycap](https://www.printables.com/model/440477-keycaps-for-pico-sdvx-controller)
 * x4 [1.5U Keycaps](https://www.printables.com/model/440477-keycaps-for-pico-sdvx-controller)
 * x2 [2U Keycaps](https://www.printables.com/model/440477-keycaps-for-pico-sdvx-controller)

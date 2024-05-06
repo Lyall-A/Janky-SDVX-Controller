@@ -27,3 +27,5 @@ A worse version of the [Pocket-SDVX-Pico-v4](https://github.com/speedypotato/Poc
 * `GP6`: START
 * `GP16` & `GP17`: VOL-L
 * `GP18` & `GP19`: VOL-R
+
+![Container SDVX Controller](./Container%20SDVX%20Controller.png)

@@ -28,7 +28,13 @@ A worse version of the [Pocket-SDVX-Pico-v4](https://github.com/speedypotato/Poc
 * `GP16` & `GP17`: VOL-L
 * `GP18` & `GP19`: VOL-R
 
+## TODO:
+* Change FX-L and FX-R GPIO? (having issues)
+* Remove tabs next to encoders in Case Top
+
 ## Pictures
-![Janky SDVX Controller](./Janky%20SDVX%20Controller.png)
+![Top + Keycaps](./Top%20+%20Keycaps.png)
+![Top](./Top.png)
+![Inside](./Inside.png)
 # DO NOT SCROLL PAST HERE!
-![Container SDVX Controller](./Container%20SDVX%20Controller.png)
+![Luxury SDVX Controller](./Luxury%20SDVX%20Controller.png)

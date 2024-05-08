@@ -23,7 +23,7 @@ const uint8_t SW_KEYCODE[] = {
     HID_KEY_M, HID_KEY_1,
 };
 const uint8_t SW_GPIO[] = {
-    2, 3, 4, 5, 0, 1, 6
+    2, 3, 4, 5, 8, 9, 6
 };
 // const uint8_t LED_GPIO[] = {21};
 const uint8_t ENC_GPIO[] = {16, 18};     // L_ENC(0, 1); R_ENC(2, 3)

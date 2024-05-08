@@ -22,15 +22,11 @@ A worse version of the [Pocket-SDVX-Pico-v4](https://github.com/speedypotato/Poc
 * `GP3`: BT-B
 * `GP4`: BT-C
 * `GP5`: BT-D
-* `GP0`: FX-L
-* `GP1`: FX-R
+* `GP8`: FX-L
+* `GP9`: FX-R
 * `GP6`: START
 * `GP16` & `GP17`: VOL-L
 * `GP18` & `GP19`: VOL-R
-
-## TODO:
-* Change FX-L and FX-R GPIO? (having issues)
-* Remove tabs next to encoders in Case Top
 
 ## Pictures
 ![Top + Keycaps](./Top%20+%20Keycaps.png)

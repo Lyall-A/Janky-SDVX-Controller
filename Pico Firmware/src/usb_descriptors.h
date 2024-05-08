@@ -38,19 +38,6 @@ enum {
       HID_USAGE(HID_USAGE_DESKTOP_Y), HID_REPORT_COUNT(2), HID_REPORT_SIZE(8), \
       HID_INPUT(HID_DATA | HID_VARIABLE | HID_ABSOLUTE), HID_COLLECTION_END
 
-// Light Map
-// #define GAMECON_REPORT_DESC_LIGHTS(...)                                        \
-//   HID_USAGE_PAGE(HID_USAGE_PAGE_DESKTOP), HID_USAGE(0x00),                     \
-//       HID_COLLECTION(HID_COLLECTION_APPLICATION),                              \
-//       __VA_ARGS__ HID_REPORT_COUNT(LED_GPIO_SIZE + (WS2812B_LED_ZONES * 3)),   \
-//       HID_REPORT_SIZE(8), HID_LOGICAL_MIN(0x00), HID_LOGICAL_MAX_N(0x00ff, 2), \
-//       HID_USAGE_PAGE(HID_USAGE_PAGE_ORDINAL), HID_STRING_MINIMUM(4),           \
-//       HID_STRING_MAXIMUM(16), HID_USAGE_MIN(1), HID_USAGE_MAX(13),             \
-//       HID_OUTPUT(HID_DATA | HID_VARIABLE | HID_ABSOLUTE), HID_REPORT_COUNT(1), \
-//       HID_REPORT_SIZE(8), /*Padding*/                                          \
-//       HID_INPUT(HID_CONSTANT | HID_VARIABLE | HID_ABSOLUTE),                   \
-//       HID_COLLECTION_END
-
 // NKRO Descriptor
 #define GAMECON_REPORT_DESC_NKRO(...)                                         \
   HID_USAGE_PAGE(HID_USAGE_PAGE_DESKTOP), HID_USAGE(HID_USAGE_PAGE_KEYBOARD), \

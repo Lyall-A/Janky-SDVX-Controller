@@ -22,7 +22,6 @@
 #include "tusb.h"
 #include "usb_descriptors.h"
 #include "debounce/debounce_include.h"
-// #include "rgb/rgb_include.h"
 // clang-format on
 
 PIO pio, pio_1;
@@ -35,14 +34,10 @@ uint64_t sw_timestamp[SW_GPIO_SIZE];
 
 bool kbm_report;
 
-// uint64_t reactive_timeout_timestamp;
-
-// void (*ws2812b_mode)();
 void (*loop_mode)();
 uint16_t (*debounce_mode)();
 bool joy_mode_check = true;
 
-// lights_report_t lights_report;
 report_t report;
 
 /**
@@ -138,22 +133,6 @@ void dma_handler() {
 }
 
 /**
- * Second Core Runnable
- **/
-// void core1_entry() {
-//   uint32_t counter = 0;
-//   uint32_t rgb_idx = 0;
-//   while (1) {
-//     counter++;
-//     if (counter % 32 == 0) {
-//       rgb_idx = ++rgb_idx % 768;
-//       ws2812b_mode(rgb_idx);
-//     }
-//     sleep_ms(1);
-//   }
-// }
-
-/**
  * Initialize Board Pins
  **/
 void init() {
@@ -187,14 +166,6 @@ void init() {
     dma_channel_set_irq0_enabled(i, true);
   }
 
-  // reactive_timeout_timestamp = time_us_64();
-
-  // Set up WS2812B
-  // pio_1 = pio1;
-  // uint offset2 = pio_add_program(pio_1, &ws2812_program);
-  // ws2812_program_init(pio_1, ENC_GPIO_SIZE, offset2, WS2812B_GPIO, 800000,
-  //                     false);
-
   // Setup Button GPIO
   for (int i = 0; i < SW_GPIO_SIZE; i++) {
     prev_sw_val[i] = false;
@@ -217,22 +188,8 @@ void init() {
     joy_mode_check = true;
   }
 
-  // RGB Mode Switching
-  // default to color cycle mode unless BT-B pressed when plugging in
-  // (turbocharger mode)
-  // if (gpio_get(SW_GPIO[1])) {
-  //   ws2812b_mode = &ws2812b_color_cycle_v5;
-  // } else {
-  //   ws2812b_mode = &turbocharger_color_cycle;
-  // }
-
   // Debouncing Mode
   debounce_mode = &debounce_eager;
-
-  // Disable RGB
-  // if (gpio_get(SW_GPIO[8])) {
-  //   multicore_launch_core1(core1_entry);
-  // }
 }
 
 /**
@@ -275,13 +232,4 @@ void tud_hid_set_report_cb(uint8_t itf, uint8_t report_id,
                            hid_report_type_t report_type, uint8_t const* buffer,
                            uint16_t bufsize) {
   (void)itf;
-  // if (report_id == 2 && report_type == HID_REPORT_TYPE_OUTPUT &&
-  //     bufsize >= sizeof(lights_report))  // light data
-  // {
-  //   size_t i = 0;
-  //   for (i; i < sizeof(lights_report); i++) {
-  //     lights_report.raw[i] = buffer[i];
-  //   }
-  //   reactive_timeout_timestamp = time_us_64();
-  // }
 }

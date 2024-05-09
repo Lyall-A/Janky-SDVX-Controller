@@ -1,7 +1,10 @@
 # Janky SDVX Controller
 A worse version of the [Pocket-SDVX-Pico-v4](https://github.com/speedypotato/Pocket-SDVX-Pico-v4) with no RGB
 
-Both the Leonardo and Pico firmware function mostly the same, use the Leonardo version if you are using a ATmega32u4 microcontroller or the Pico version if you are using a RP2040 microcontroller
+## Firmware
+* [Leonardo Firmware](./Leonardo%20Firmware): Firmware for ATmega32u4 microcontrollers (Leonardo/Pro Micro)
+* [Pico Firmware](./Pico%20Firmware): Firmware for RP2040 microcontrollers (Pico)
+* [Unsupported Board Firmware](./Unsupported%20Board%20Firmware): Firmware for other microcontrollers. Uses Serial instead of HID (**PLEASE DO NOT USE THIS**)
 
 ## Parts
 * x2 Encoders ([PEC16-2015F-N0024](https://mou.sr/3JNRuk8))
@@ -44,11 +47,5 @@ Both the Leonardo and Pico firmware function mostly the same, use the Leonardo v
 ## Pictures
 ![Top + Keycaps](./Pictures/Top%20+%20Keycaps.png)
 ![Top](./Pictures/Top.png)
-![Pico Inside](./Pictures/Pico%20Inside.png)
-![Pico Inside Bottom](./Pictures/Pico%20Inside%20Bottom.png)
-## Pico Pins
-![Pico Pins](./Pictures/Pico%20Pins.png)
-## Pro Micro Pins
-![Pro Micro Pins](./Pictures/Pro%20Micro%20Pins.png)
 # DO NOT SCROLL PAST HERE!
 ![Luxury SDVX Controller](./Pictures/Luxury%20SDVX%20Controller.png)

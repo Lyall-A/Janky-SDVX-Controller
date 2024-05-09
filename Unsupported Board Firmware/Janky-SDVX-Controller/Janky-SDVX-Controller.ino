@@ -1,4 +1,3 @@
-// #include "Janky-SDVX-Controller.h"
 #include "Encoder.h"
 
 // Mouse Sens Multiplier
@@ -14,13 +13,14 @@
 #define BIND_ST   "1"
 
 // Button Pinout
+// CHANGE THESE
 #define BT_A  2
 #define BT_B  3
 #define BT_C  4
 #define BT_D  5
 #define FX_L  6
 #define FX_R  7
-#define BT_ST 21
+#define BT_ST 8
 
 String bindKeys[] = { BIND_A, BIND_B, BIND_C, BIND_D, BIND_FX_L, BIND_FX_R, BIND_ST };
 bool keysHeld[] = { false, false, false, false, false, false, false, false };
@@ -29,7 +29,8 @@ uint8_t buttonCount = sizeof(buttonPins) / sizeof(buttonPins[0]);
 
 // Encoder sensitivity = number of positions per rotation times 4 (24*4) / number of positions for HID report (256)
 #define ENCODER_SENSITIVITY (double) 0.375
-Encoder encL(9, 8), encR(16, 10);
+// CHANGE THESE
+Encoder encL(20, 19), encR(22, 21);
 float knob1 = 0;
 float knob2 = 0;
 float old_knob1 = 0;
@@ -91,12 +92,12 @@ void keyboard_mode() {
       if (keysHeld[i]) return;
       keysHeld[i] = true;
       Serial.println("kd:" + bindKeys[i]);
+      delayMicroseconds(1000);
     } else {
       if (!keysHeld[i]) return;
       keysHeld[i] = false;
       Serial.println("ku:" + bindKeys[i]);
+      delayMicroseconds(1000);
     }
   }
-
-  delayMicroseconds(1000);
 }

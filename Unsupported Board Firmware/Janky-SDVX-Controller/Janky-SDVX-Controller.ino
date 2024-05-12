@@ -1,9 +1,5 @@
 #include "Encoder.h"
 
-// Number of microseconds between HID reports
-// 2000 = 500hz
-#define REPORT_DELAY 1000
-
 // Mouse Sens Multiplier
 #define MOUSE_MULT  3
 
@@ -102,6 +98,4 @@ void keyboard_mode() {
       Serial.println("ku:" + bindKeys[i]);
     }
   }
-  
-  delayMicroseconds(REPORT_DELAY);
 }

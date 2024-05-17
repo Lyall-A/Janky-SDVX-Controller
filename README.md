@@ -23,7 +23,7 @@ A worse version of the [Pocket-SDVX-Pico-v4](https://github.com/speedypotato/Poc
 * x2 [2U Keycaps](https://www.printables.com/model/440477-keycaps-for-pico-sdvx-controller)
 
 ## Pictures
-![Top + Keycaps](./Pictures/Top%20+%20Keycaps.png)
-![Top](./Pictures/Top.png)
+![Top + Keycaps](./Pictures/Top%20+%20Keycaps.jpg)
+![Top](./Pictures/Top.jpg)
 # DO NOT SCROLL PAST HERE!
-![Luxury SDVX Controller](./Pictures/Luxury%20SDVX%20Controller.png)
+![Luxury SDVX Controller](./Pictures/Luxury%20SDVX%20Controller.jpg)

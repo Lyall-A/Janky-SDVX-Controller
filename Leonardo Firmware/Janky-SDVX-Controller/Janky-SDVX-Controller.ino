@@ -44,7 +44,7 @@ uint8_t buttonCount = sizeof(buttonPins) / sizeof(buttonPins[0]);
 
 // Encoder sensitivity = number of positions per rotation times 4 (24*4) / number of positions for HID report (256)
 #define ENCODER_SENSITIVITY (double) 0.375
-Encoder encL(9, 8), encR(16, 10);
+Encoder encL(8, 9), encR(16, 10);
 float knob1 = 0;
 float knob2 = 0;
 float old_knob1 = 0;

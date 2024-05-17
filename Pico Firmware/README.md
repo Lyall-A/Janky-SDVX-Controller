@@ -16,6 +16,6 @@ Stolen from https://github.com/speedypotato/Pocket-SDVX-Pico-v4
 * `GP16` & `GP17`: VOL-R
 
 ## Pictures
-![Inside](./Pictures/Inside.png)
-![Inside Bottom](./Pictures/Inside%20Bottom.png)
-![Pins](./Pictures/Pins.png)
+![Inside](./Pictures/Inside.jpg)
+![Inside Bottom](./Pictures/Inside%20Bottom.jpg)
+![Pins](./Pictures/Pins.jpg)

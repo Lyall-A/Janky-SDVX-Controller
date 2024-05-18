@@ -26,12 +26,12 @@ int currMode = EEPROM.read(0);
 #define BIND_ST   '1'
 
 // Button Pinout
-#define BT_A  2
-#define BT_B  3
-#define BT_C  4
-#define BT_D  5
-#define FX_L  6
-#define FX_R  7
+#define BT_A  4
+#define BT_B  5
+#define BT_C  6
+#define BT_D  7
+#define FX_L  8
+#define FX_R  9
 #define BT_ST 21
 
 // Number of cycles before HID falls back to reactive
@@ -44,7 +44,7 @@ uint8_t buttonCount = sizeof(buttonPins) / sizeof(buttonPins[0]);
 
 // Encoder sensitivity = number of positions per rotation times 4 (24*4) / number of positions for HID report (256)
 #define ENCODER_SENSITIVITY (double) 0.375
-Encoder encL(8, 9), encR(16, 10);
+Encoder encL(0, 1), encR(3, 2);
 float knob1 = 0;
 float knob2 = 0;
 float old_knob1 = 0;

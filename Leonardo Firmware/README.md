@@ -7,15 +7,15 @@ Stolen from https://github.com/speedypotato/Pocket-SDVX
 * Press `Upload` (`CTRL+U`) to compile and upload the firmware to your board
 
 ## GPIO
-* `2`: BT-A
-* `3`: BT-B
-* `4`: BT-C
-* `5`: BT-D
-* `6`: FX-L
-* `7`: FX-R
+* `4`: BT-A
+* `5`: BT-B
+* `6`: BT-C
+* `7`: BT-D
+* `8`: FX-L
+* `9`: FX-R
 * `21`: START
-* `8` & `9`: VOL-L
-* `10` & `16`: VOL-R
+* `0` & `1`: VOL-L
+* `3` & `2`: VOL-R
 
 ## Pictures (TODO)
 ![Inside](./Pictures/Inside.jpg)
